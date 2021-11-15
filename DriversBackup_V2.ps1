@@ -20,14 +20,14 @@ $Behavior = 0
 
 # Unused Intel system drivers exported from DriverStore to "Drivers without existing device\System" are (usually) obsolete ones.
 # You can safely withdraw them from backup.
-# If you want to remove unused Intel network adapter drivers, set below value to 1.
-# If you want to backup them anyway, leave below value to 0.(Default setting)
+# If you want to remove unused Intel system drivers, set below value to 1.
+# If you want to backup them anyway, leave below value set to 0.(Default setting)
 $Remove_Unused_Intel_System_Drivers = 0
 
 # Unused Intel network drivers exported from DriverStore to "Drivers without existing device\Network adapters" are (usually) obsolete ones.
 # You can safely withdraw them from backup.
 # If you want to remove unused Intel network adapter drivers, set below value to 1.
-# If you want to backup them anyway, leave below value to 0.(Default setting)
+# If you want to backup them anyway, leave below value set to 0.(Default setting)
 $Remove_Unused_Intel_Network_Drivers = 0
 
 # ###########################
@@ -412,7 +412,7 @@ if ($Remove_Unused_Intel_Network_Drivers -eq 1) {
 				Remove-Item $ParentName -Force -Recurse
 			}
 		}
-		Write-Host "Done" -NoNewline -ForegroundColor "Green"
+		Write-Host "Done`n`n" -NoNewline -ForegroundColor "Green"
 	}
 } 
 
@@ -429,7 +429,7 @@ if ($Remove_Unused_Intel_Network_Drivers -eq 1) {
 				Remove-Item $ParentName -Force -Recurse
 			}
 		}
-		Write-Host "Done" -NoNewline -ForegroundColor "Green"
+		Write-Host "Done`n`n" -NoNewline -ForegroundColor "Green"
 	}
 }
 
