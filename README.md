@@ -1,5 +1,5 @@
 # Drivers Backup
-Backup all 3rd party drivers, sort your drivers with a "human readable" folder name, inside driver category folders.
+Backup all 3rd party drivers, sort your drivers with a "human readable" folder name inside driver category folders.
 
 There is 4 values you can edit:
    - Destination path : leave "not set" value to browse and choose backup folder, or enter a backup path (existing or not) inside double quotes.
